@@ -1,17 +1,65 @@
-*{
+@font-face {
+    font-family: 'DentingIrama';
+    src: url('./font/DentingIramaDemoRegular-BF66484f3277934.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ChasingHearts';
+    src: url('./font/Chasing\ Hearts\ -\ OTF.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'IFound';
+    src: url('./font/I\ Found\ My\ Valentine\ -\ OTF.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'IFoundH';
+    src: url('./font/I\ Found\ My\ Valentine\ Hearted\ -\ OTF.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Liebe';
+    src: url('./font/Liebe\ finden\ -\ OTF.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'ValentineCute';
+    src: url('./font/Valentine\ Cute.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MWHeart';
+    src: url('./font/MWHeart.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KGHearts';
+    src: url('./font/KGHeartDoodles.ttf') format('truetype');
+    font-style: normal;
+}
+
+:root {
+    --font1: 'ChasingHearts';
+    --font2: '';
+    --font3: '';
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     overflow: hidden;
     /* flex-wrap: wrap; */
-    
+
 }
 
-section{
+section {
     flex: 1;
     height: 100vh;
     position: relative;
@@ -19,7 +67,7 @@ section{
     min-width: 380px;
 }
 
-section div{
+section div {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -33,18 +81,18 @@ section div{
 
 
 /* COLUNA 1 */
-.col_1{
+.col_1 {
     background-color: aqua;
 }
 
-.col_1 .box_1{
+.col_1 .box_1 {
     background-image: url(./img/foto6.png);
     width: 70%;
     height: 30%;
     left: -5%;
 }
 
-.col_1 .box_2{
+.col_1 .box_2 {
     background-image: url(./img/foto5.png);
     width: 50%;
     height: 60%;
@@ -52,7 +100,7 @@ section div{
     z-index: 1;
 }
 
-.col_1 .box_3{
+.col_1 .box_3 {
     background-image: url(./img/foto2.png);
     width: 80%;
     height: 40%;
@@ -61,7 +109,7 @@ section div{
     z-index: 2;
 }
 
-.col_1 .box_4{
+.col_1 .box_4 {
     background-image: url(./img/foto4.png);
     width: 60%;
     height: 40%;
@@ -69,7 +117,7 @@ section div{
     z-index: 3;
 }
 
-.col_1 .box_5{
+.col_1 .box_5 {
     background-image: url(./img/foto1.png);
     width: 70%;
     height: 50%;
@@ -78,16 +126,76 @@ section div{
     z-index: 4;
 }
 
+.box_glass {
+    position: fixed;
+    top: 19%;
+    left: 26%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(130deg, #ffffff70 0%, #ffffff00);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: solid 1px #cccccc;
+
+    height: 65%;
+    width: 90%;
+    max-width: 750px;
+    z-index: 10;
+}
+
+.box_glass p {
+    width: 90%;
+    max-width: 600px;
+    height: 80%;
+    font-family: var(--font1);
+    font-size: 40px;
+    color: #111111;
+    font-weight: 600;
+    overflow: auto;
+    padding: 0 5%;
+}
+
+html ::-webkit-scrollbar {
+    width: 10px;
+    position: absolute;
+    right: -50%;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #60000030;
+}
+
+html ::-webkit-scrollbar-track {
+    border-radius: 50px;
+    background: #cccccc50;
+}
+
+/* .box_glass::after{
+    border-radius: 20px;
+    content: '';
+    background-image: linear-gradient(to bottom, #000000 0%, #ffffff 100%);
+    top: -10px;
+    left: -10px;
+    bottom: -10px;
+    right: -10px;
+    position: absolute;
+    z-index:-2;
+} */
+
 
 
 
 
 /* COLUNA 2 */
-.col_2{
+.col_2 {
     background-color: plum;
 }
 
-.col_2 .box_1{
+.col_2 .box_1 {
     background-image: url(./img/foto3.png);
     width: 80%;
     height: 60%;
@@ -95,7 +203,7 @@ section div{
     left: 5%;
 }
 
-.col_2 .box_2{
+.col_2 .box_2 {
     background-image: url(./img/foto4.png);
     width: 70%;
     height: 40%;
@@ -103,7 +211,7 @@ section div{
     left: 5%;
 }
 
-.col_2 .box_3{
+.col_2 .box_3 {
     background-image: url(./img/foto6.png);
     width: 80%;
     height: 30%;
@@ -112,7 +220,7 @@ section div{
     z-index: 4;
 }
 
-.col_2 .box_4{
+.col_2 .box_4 {
     background-image: url(./img/foto1.png);
     width: 80%;
     height: 30%;
@@ -120,12 +228,12 @@ section div{
     z-index: 1;
 }
 
-.col_2 .box_5{
+.col_2 .box_5 {
     background-image: url(./img/foto5.png);
     width: 40%;
-    height: 60%;
-    top: 20%;
-    right: -10%;
+    height: 50%;
+    top: 27%;
+    right: -12%;
     z-index: 1;
 }
 
@@ -134,29 +242,65 @@ section div{
 
 
 /* COLUNA 3 */
-.col_3{
+.col_3 {
     background-color: lightgreen;
 }
+
+.col_3 .box_1 {
+    background-image: url(./img/foto2.png);
+    width: 50%;
+    height: 50%;
+    right: -1vw;
+    top: -5vh;
+}
+
+.col_3 .box_2 {
+    background-image: url(./img/foto4.png);
+    width: 60%;
+    height: 50%;
+    top: 30%;
+    left: 10%;
+    z-index: 1;
+}
+
+.col_3 .box_3 {
+    background-image: url(./img/foto3.png);
+    width: 60%;
+    height: 30%;
+    bottom: -2vh;
+    left: 0%;
+    z-index: 1;
+}
+
+.col_3 .box_4 {
+    background-image: url(./img/foto5.png);
+    width: 40%;
+    height: 60%;
+    bottom: -2vh;
+    right: 0;
+    z-index: 1;
+}
+
 
 
 
 
 @media screen and (max-width: 1140px) {
-    .col_2{
+    .col_2 {
         overflow: hidden;
     }
 
-    .col_3{
+    .col_3 {
         display: none;
     }
 }
 
 @media screen and (max-width: 760px) {
-    .col_1{
+    .col_1 {
         overflow: hidden;
     }
 
-    .col_2{
+    .col_2 {
         display: none;
     }
 }
