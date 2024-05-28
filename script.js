@@ -11,4 +11,4 @@ function escreverTexto(texto,idElemento,tempo){
 
 }
 
-escreverTexto(texto,'texto',10);
+escreverTexto(texto,'texto',100);

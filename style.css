@@ -44,6 +44,8 @@
     --font1: 'ChasingHearts';
     --font2: '';
     --font3: '';
+
+    --cor1: #500000;
 }
 
 * {
@@ -73,7 +75,7 @@ section div {
     background-position: center;
     position: absolute;
     border-radius: 20px;
-    box-shadow: 0 0 20px #600000;
+    box-shadow: 0 0 20px var(--cor1);
 }
 
 
@@ -135,11 +137,11 @@ section div {
     justify-content: center;
     align-items: center;
 
-    background: linear-gradient(130deg, #ffffff70 0%, #ffffff00);
+    background: linear-gradient(130deg, #ffffffaa 0%, #ffffff30);
     backdrop-filter: blur(20px);
     border-radius: 20px;
     border: solid 1px #cccccc;
-    box-shadow: 0 0 100px #600000;
+    box-shadow: 0 0 100px var(--cor1);
 
     height: 65%;
     width: 90%;
@@ -157,6 +159,9 @@ section div {
     font-weight: 600;
     overflow: auto;
     padding: 0 10%;
+    line-height: 48px;
+    letter-spacing: 2px;
+    text-align: justify;
 }
 
 html ::-webkit-scrollbar {
@@ -167,7 +172,7 @@ html ::-webkit-scrollbar {
 
 html ::-webkit-scrollbar-thumb {
     border-radius: 50px;
-    background: #60000050;
+    background: #50000050;
 }
 
 html ::-webkit-scrollbar-track {
@@ -314,5 +319,11 @@ html ::-webkit-scrollbar-track {
         left: calc(50vw - 170px);
         max-width: 360px;
         min-width: auto;
+    }
+
+    .box_glass p {
+        font-size: 26px;
+        line-height: 38px;
+        padding: 0 2%;
     }
 }
