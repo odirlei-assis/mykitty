@@ -65,7 +65,7 @@ section {
     flex: 1;
     height: 100vh;
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
     min-width: 380px;
 }
 
