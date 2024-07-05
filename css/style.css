@@ -88,7 +88,7 @@ section div {
 }
 
 .col_1 .box_1 {
-    background-image: url(./img/fotos/img6.jpeg);
+    background-image: url(../img/fotos/img6.jpeg);
     width: 70%;
     height: 30%;
     /* left: -5%; */
@@ -99,7 +99,7 @@ section div {
 }
 
 .col_1 .box_2 {
-    background-image: url(./img/fotos/img3.jpeg);
+    background-image: url(../img/fotos/img3.jpeg);
     width: 50%;
     height: 60%;
     /* right: -10%; */
@@ -111,7 +111,7 @@ section div {
 }
 
 .col_1 .box_3 {
-    background-image: url(./img/fotos/img1.jpeg);
+    background-image: url(../img/fotos/img1.jpeg);
     width: 80%;
     height: 40%;
     /* top: 30%;
@@ -124,7 +124,7 @@ section div {
 }
 
 .col_1 .box_4 {
-    background-image: url(./img/fotos/img2.jpeg);
+    background-image: url(../img/fotos/img2.jpeg);
     width: 60%;
     height: 40%;
     /* bottom: -5vh; */
@@ -136,7 +136,7 @@ section div {
 }
 
 .col_1 .box_5 {
-    background-image: url(./img/fotos/img4.jpeg);
+    background-image: url(../img/fotos/img4.jpeg);
     width: 70%;
     height: 50%;
     /* bottom: -5vh;
