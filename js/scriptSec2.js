@@ -37,7 +37,7 @@ function mostrarFrase() {
         const exibidasIndices = JSON.parse(localStorage.getItem('exibidasIndices')) || []; // Obtém os índices das frases já exibidas
         const { frase, indice } = escolherFraseAleatoria(frases, exibidasIndices); // Escolhe uma frase aleatória que ainda não foi exibida
         
-        document.getElementById('frase').innerHTML = frase + "... <br>Nunca se esqueça que eu te amo mais!!!!";
+        document.getElementById('frase').innerHTML = frase + "... <br><br>Nunca se esqueça que eu te amo mais!!!!";
 
         // Registra o índice da frase exibida
         exibidasIndices.push(indice);
@@ -47,3 +47,20 @@ function mostrarFrase() {
         console.error('Erro ao ler o arquivo CSV:', error); // Exibe um erro se houver problema ao ler o CSV
     });
 }
+
+// function trocarBackground() {
+//     // Número total de imagens na pasta
+//     const totalImagens = 7; // Ajuste conforme o número total de imagens que você possui
+
+//     // Gera um número aleatório entre 1 e o total de imagens
+//     const numeroAleatorio = Math.floor(Math.random() * totalImagens) + 1;
+
+//     // Caminho da imagem com o número aleatório
+//     const caminhoImagem = './img/fotos/img' + numeroAleatorio + '.jpeg'; // Altere o formato se for png, por exemplo
+
+//     // Seleciona a section pelo id
+//     const secao = document.getElementById('sec_2');
+
+//     // Altera o background-image da seção
+//     secao.style.backgroundImage =  'linear-gradient(rgba(0, 0, 0, 80%), rgba(0, 0, 0, 80%)),url(' + caminhoImagem + ')';
+// }

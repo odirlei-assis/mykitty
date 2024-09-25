@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'DentingIrama';
+  src: url('../font/DentingIramaDemoRegular-BF66484f3277934.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ChasingHearts';
+  src: url('../font/Chasing\ Hearts\ -\ OTF.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'IFound';
+  src: url('../font/I\ Found\ My\ Valentine\ -\ OTF.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'IFoundH';
+  src: url('../font/I\ Found\ My\ Valentine\ Hearted\ -\ OTF.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Liebe';
+  src: url('../font/Liebe\ finden\ -\ OTF.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ValentineCute';
+  src: url('../font/Valentine\ Cute.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MWHeart';
+  src: url('../font/MWHeart.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KGHearts';
+  src: url('../font/KGHeartDoodles.ttf') format('truetype');
+  font-style: normal;
+}
+
+:root {
+  --font1: 'ChasingHearts';
+  --font2: '';
+  --font3: '';
+
+  --cor1: #600000;
+  --cor2: #850024;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0e0e0e;
+}
+
+.containerPadrao{
+  width: 100vw;
+  height: 100vh;
+  max-width: 768px;
+}
+
+.container {
+  position: absolute;
+  top: -110vh;
+}
+
+.container.active {
+  display: flex;
+  opacity: 1;
+}
+
+.entrada{
+  animation: entrada forwards 1.5s;
+  z-index: 1;
+}
+
+.saida{
+  animation: saida 2s forwards;
+  z-index: 0;
+}
+
+@keyframes entrada{
+  0%{
+    display: flex;
+      top: -110vh;
+    }
+  100%{
+      top: 0;
+  }
+}
+
+@keyframes saida{
+  0%{
+    top: 0;
+  }
+
+  90%{
+    top: 0;
+  }
+  
+  100%{
+    top: -110vh;
+    display: none;
+  }
+}
