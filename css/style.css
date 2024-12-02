@@ -1,50 +1,5 @@
-@font-face {
-  font-family: 'DentingIrama';
-  src: url('../font/DentingIramaDemoRegular-BF66484f3277934.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'ChasingHearts';
-  src: url('../font/Chasing\ Hearts\ -\ OTF.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'IFound';
-  src: url('../font/I\ Found\ My\ Valentine\ -\ OTF.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'IFoundH';
-  src: url('../font/I\ Found\ My\ Valentine\ Hearted\ -\ OTF.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'Liebe';
-  src: url('../font/Liebe\ finden\ -\ OTF.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'ValentineCute';
-  src: url('../font/Valentine\ Cute.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'MWHeart';
-  src: url('../font/MWHeart.ttf') format('truetype');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'KGHearts';
-  src: url('../font/KGHeartDoodles.ttf') format('truetype');
-  font-style: normal;
-}
-
+/* CSS GLOBAL */
 :root {
-  --font1: 'ChasingHearts';
-  --font2: '';
-  --font3: '';
-
   --cor1: #600000;
   --cor2: #850024;
 }
@@ -63,20 +18,15 @@ body{
   background-color: #0e0e0e;
 }
 
-.containerPadrao{
+.container_padrao{
   width: 100vw;
   height: 100vh;
   max-width: 768px;
 }
 
-.container {
+.container_posicao {
   position: absolute;
   top: -110vh;
-}
-
-.container.active {
-  display: flex;
-  opacity: 1;
 }
 
 .entrada{

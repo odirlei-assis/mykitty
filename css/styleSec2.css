@@ -1,8 +1,10 @@
+/* CSS SEÇÃO 2 */
 #sec_2 {
-    background-image: url(../img/hearts.png);
+    /* background-image: url(../img/hearts.png); */
     /* border-image: ; */
     background-size: cover;
     background-position: center;
+    background-color: goldenrod;
 }
 
 .container_2 {
