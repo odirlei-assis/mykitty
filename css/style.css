@@ -30,12 +30,12 @@ body{
 }
 
 .entrada{
-  animation: entrada forwards 1.5s;
+  animation: entrada forwards 1.2s;
   z-index: 1;
 }
 
 .saida{
-  animation: saida 2s forwards;
+  animation: saida 1.5s forwards;
   z-index: 0;
 }
 
